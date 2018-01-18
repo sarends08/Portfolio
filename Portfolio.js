@@ -33,7 +33,6 @@ $(document).ready(function() {
 		
 		
 	//Change active navbar button on scroll
-
 	var nav = $('nav'),
 		navHeight = nav.outerHeight(),
 		sections = $('section');
