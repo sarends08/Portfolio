@@ -1,0 +1,444 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box; /* element's specified width and height aren't affected by padding or borders */
+}
+
+html {
+	height:100%;
+}
+
+body {
+	background: #EEEEEE;
+	color: #444444;
+	height: 100%;
+	min-height: 100%;
+}
+
+/* Navbar */
+
+header {
+	background-color: #B4BBB9;
+	border-bottom: 1px solid rgba(0,0,0,.15); /* rgba lets you set an "alpha" value which makes it transparent */
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	z-index: 1;
+}
+
+header > div#logo {
+	line-height: 60px;
+	position: relative;
+}
+
+header > .menuDown {
+	box-shadow: 0 3px 5px rgba(0,0,0,.15);
+}
+
+header > .menuUp{
+	box-shadow: none;
+}
+
+header > div#logo > h1 {
+	color: #EEEEEE;
+	display: inline-block;
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 1.5em;
+}
+
+header > div#logo > div#navToggle {
+	font-size:1.5em;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: 300ms all ease;
+}
+
+header > div#logo > div#navToggle:hover >{
+	color: rgba(255, 255, 255, 1);
+}
+
+header > div#logo > div#navToggle > a {
+	color: #EEEEEE;
+	display: block;
+	font-size: 0.85em;
+	font-weight: 600;
+	padding: 0 2.5rem;
+	text-decoration: none;
+	transition: 300ms all ease;
+}
+
+.cactus {
+	display: inline-block;
+	padding-top: 25px;
+}
+
+header > nav {
+	background-color: #EEEEEE;
+	display: none;
+	flex: 1;
+	transform: 300ms all ease; 
+}
+
+header nav > ul {
+	list-style-type: none;
+}
+
+header nav > ul > li {
+	border-bottom: 1px dotted rgba(0,0,0,.1);
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header nav > ul > li > a {
+	display: block;
+	color: rgba(0,0,0,.65);
+	padding: 1.5rem 0;  /* 1 rem is equal to the value of the font-size on the root element(html) */
+	text-decoration: none;
+	transition: 250ms all ease;
+}
+
+header nav > ul > li:last-of-type {
+	border-bottom: none;
+}
+
+header > nav > ul > li:hover > a {
+	color: #A2A2A2;
+}
+
+
+/* Text on background image */
+
+.container {
+	background-image: url('saguaro-sm.png');
+	height: 100%;
+	background-attachment: scroll;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+.name{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 3em;
+}
+
+.title-container {
+	opacity: 1;
+	transition: opacity 1s;
+	transform: translate(0, 20px); /* move down by 20px when hidden */
+	transition: all 1s;
+}
+
+.title-container.invisible{
+	opacity: 0;
+	transform: translate(0, 0); /* move to 0 when hidden */
+}
+
+.jobtitle{
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 2em;
+	text-align: center;
+}
+
+section.active {}
+
+
+/* About section */
+#about{
+	display: flex;
+	justify-content: center;
+}
+
+.column {
+	display: none;
+}
+
+.main {
+	width: 100%;
+	text-align: center;
+	margin: 0 5px 0 5px;
+}
+
+.heading {
+	padding: 20% 0 10% 0;
+	text-align: left;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+.paragraph {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Work section */
+
+#work {
+	display: flex;
+	justify-content: center;
+}
+
+.main-work {
+	width: 100%;
+}
+
+.card {
+	border: solid 1px rgba(0,0,0,.15);
+	display: block;
+	margin-top: 2%;
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.box {
+	width: 100%;
+}
+
+.card-img{
+	width: 100%;
+}
+
+.text {
+	padding: 10px 16px;
+	font-family: "Open Sans", sans-serif;
+}
+
+/*Contact Section */
+
+#contact {
+	display: flex;
+	justify-content: center;
+	padding-top: 10%;
+}
+
+.main-contact{
+	width: 100%;
+	font-family: "Open Sans", sans-serif;
+}
+
+/* Form */
+.input-list li {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-bottom: 3%;
+	margin-right: 5px;
+}
+
+.input-list > li > label {
+	flex: 1 0 100px;
+	max-width: 200px;
+}
+
+.input-list > li > label + * {
+	flex: 1 0 200px;
+}
+
+.input-list > li > input:not([type="submit"]), .input-list > li > textarea {
+	padding: 5px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+}
+
+.submit{
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	border: none;
+	background-color: #B4BBB9;
+	padding: 10px;
+	margin: 5% 0 20% auto;
+	cursor: pointer;
+}
+
+.submit:hover{
+	background-color: #798786;
+}
+
+footer {
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	padding-bottom: 10px;
+}
+
+.fa-github, .fa-linkedin-square {
+	padding-left: 5px;
+}
+
+
+/* Media Inquiries */
+
+@media all and (min-width: 600px){
+	.container {
+		align-items: flex-end;
+		padding-right: 5%
+	}
+
+	.card {
+		width: 402px;
+		display: block;
+	}
+
+
+	.card-img {
+		width: 400px;
+		height: 300px;
+	}
+
+	#work {
+		justify-content: center;
+	}
+
+	.column {
+		display: initial;
+		width: 40%
+	}
+
+	.main-work {
+		width: 80%
+	}
+
+}
+
+@media all and (min-width: 900px){
+	header > div#logo > div#navToggle {
+		display: none;
+	}
+
+	header {
+		background-color: #B4BBB9;
+		flex-direction: row;
+		line-height: 90px;
+		padding: 0 3rem;
+		position: fixed;
+		text-align: left;
+		width: 100%;
+	}
+
+	header > div#logo {
+		background-color: transparent;
+		line-height: 90px;
+	}
+
+	header > div#logo> h1 {
+		color: #444444;
+		font-size: 2em;
+	}
+
+	header > nav {
+		background-color: transparent;
+		display: block;
+	}
+
+	header > nav > ul {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-end;
+	}
+
+	header nav > ul > li {
+		border-bottom: none;
+	}
+
+	header nav > ul > li > a {
+		padding: 0 1.25rem;
+	}
+
+	header nav > ul > li > a.active {
+		color: #EEEEEE;
+	}
+
+	.container{
+		background-image: url('saguaro2.png');
+		background-attachment: fixed;
+		padding-right: 10%;
+		align-items: flex-end;
+	}
+
+	.name{
+		font-size: 5em;
+		padding-top: 10%;
+	}
+
+	.column {
+		width: 10%;
+	}
+
+	.jobtitle {
+		font-size: 3em;
+		text-align: left;
+	}
+
+	#about, #work, #contact {
+		justify-content: space-between;
+	}
+
+	.main{
+		width: 85%;
+	}
+
+	.main-work{
+		width: 100%;
+	}
+
+	.card{
+		margin: 2% 2% 0 0;
+		display: inline-block;
+	}
+
+	.main-contact{
+		width: 75%;
+	}
+
+	.text {
+		padding: 2px 16px;
+	}
+
+	.input-list > li {
+		margin-right: 5%;
+	}
+
+	.input-list > li > label {
+		flex: 1 0 120px;
+		max-width: 120px;
+	}
+
+	.input-list > li > label + * {
+		flex: 1 0 120px;
+	}
+}
+
+@media all and (min-width: 1200px){
+	.column {
+		width: 50%;
+	}
+
+	.main{
+		width: 80%;
+	}
+
+	.main-work{
+		width: 100%;
+		margin: 2% 0 0 3%;
+	}
+
+	.main-contact{
+		width: 85%;
+	}
+
+	.card {
+		width: 45%;
+	}
+
+	.card-img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}

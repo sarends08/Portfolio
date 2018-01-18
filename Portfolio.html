@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sarah Arends - Web Developer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="Portfolio.css" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Rajdhani" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  		crossorigin="anonymous"></script>
+  		<script src="Portfolio.js"></script>
+  		<script src="https://use.fontawesome.com/305997f767.js"></script>
+	</head>
+	<body>
+		<header>
+			<div id="logo" class="menuUp">
+				<img class = "cactusimg" src="cactus30.png"/>
+				<h1>CactusCoding</h1>
+				<div id="navToggle"><a href="#">
+					<i class = "fa fa-bars" aria-hidden="true"></i>
+				</a></div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+			<div class= "container">
+				<div class="title-container">
+					<h1 class="name">Sarah Arends</h1>
+					<p class="jobtitle">Web Developer</p>
+				</div>
+			</div>
+			<section id="about">
+				<div class='column'></div>
+				<div class="main">
+					<h1 class= "heading" id="about">About</h1>
+					<p class= "tab paragraph">My first taste of web development started when I was a kid when I made my first website (a Petz game tribute) using MS FrontPage and hosting through GeoCities. Technology changed greatly, and so did my interests (still love animals though!). Overtime, I kept returning to the thought of web development, and after stints creating art and a degree in Marketing, I have found my home learning HTML, CSS, and JavaScript. </p>
+					<br>
+					<p class= "tab paragraph"> Due to my background in Marketing, I am highly aware of the importance of brand development and creating a great customer experience. Web development provides me a space to bring all of my passions together and I promise to bring that same passion to each new endeavor!</p> 
+					<br>
+					<p class= "tab paragraph"> My favorite thing about coding is that there are always methods to improve and new technologies to learn. I've recently tackled learning React and right now, I am currently working on back-end technologies such as Node.js, Express, and MongoDB in order to create dynamic full-stack applications. </p>
+					<br>
+					<p class= "tab paragraph"> Feel free to look through my current work below and if you'd like to work together, please let me know! I can't wait to see what amazing things we create. 
+					</p>
+				</div>
+				<div class= "column"></div>
+			</section>
+			<section id= "work">
+				<div class= "column"></div>
+				<div class= "main-work">
+					<h1 class= "heading" id="work">Work</h1>
+					<div class= "card">
+						<div class= "box">
+							<img class="card-img" src= "superpup.png" alt="thumbnail of the Super Pup RPG app"/> 
+						</div>
+						<div class= "text">
+							<h4>Super Pup RPG</h4>
+							<p>HTML5, CSS3, React</p>
+						</div>
+					</div>
+					<div class= "card">
+						<div class= "box">
+							<img class="card-img" src= "wikipedia.png" alt="thumbnail of the Wikipedia Viewer app"/>
+						</div>
+						<div class= "text">
+							<h4>Wikipedia Viewer</h4>
+							<p>HTML5, CSS3, jQuery</p>
+						</div>
+					</div>
+					
+					<div class= "card">
+						<div class= "box">
+							<img class="card-img" src= "weather.png" alt="thumbnail of the Local Weather App"/>
+						</div>
+						<div class= "text">
+							<h4>Local Weather App</h4>
+							<p>HTML5, CSS3, Bootstrap 3, jQuery</p>
+						</div>
+					</div>
+					<div class= "card">
+						<div class= "box">
+							<img class="card-img" src= "pomodoro.png" alt="thumbnail of the Pomodoro Timer app"/>
+						</div>
+						<div class= "text">
+							<h4>Pomodoro Timer</h4>
+							<p>HTML5, CSS3, jQuery</p>
+						</div>
+					</div>
+					<div class= "card">
+						<div class= "box">
+							<img class="card-img" src= "quote.png" alt="thumbnail of the Random Quote Machine App"/>
+						</div>
+						<div class= "text">
+							<h4>Random Quote Machine</h4>
+							<p>HTML5, CSS3, Bootstrap 3, jQuery</p>
+						</div>
+					</div>
+					<div class= "card">
+						<div class= "box">
+							<img class="card-img" src= "calculator.png" alt="thumbnail of a JavaScript Calculator"/>
+						</div>
+						<div class= "text">
+							<h4>JavaScript Calculator</h4>
+							<p>HTML5, CSS3, JavaScript</p>
+						</div>
+					</div>
+				</div>
+				<div class= "column"></div>
+				</section>
+				<section id= "contact">
+					<div class="column"></div>
+					<div class="main-contact">
+						<h1 class="heading" id="contact">Contact</h1>
+						<form action="https://formspree.io/saraharends08@gmail.com"
+     					 method="POST">
+     					 <ul class="input-list">
+     					 	<li>
+     					 		<label for="name">Name:</label>
+    							<input type="text" name="name" id="name">
+    						</li>
+    						<li>
+    							<label for="email">Email:</label>
+    							<input type="email" name="_replyto" id="email">
+    						</li>
+    						<li>
+    							<label for="message">Message:</label>
+    							<textarea name="message" rows="10"></textarea>
+    						</li>
+    						<li>
+    							<input class="submit" type="submit" value="Send">
+    						</li>
+    					</ul>
+						</form>
+					</div>
+					<div class= "column"></div>
+				</section>
+			</div>
+		<footer>Created by Sarah Arends 2018
+			<a href= "https://github.com/sarends08"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+			<i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>
+		</footer>
+	</body>
+</html>
