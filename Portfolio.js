@@ -30,10 +30,11 @@ $(document).ready(function() {
 			$(tags).removeClass('invisible');
 		}
 	});
-		
-		
+	
+	
 	//Change active navbar button on scroll
-	var nav = $('nav'),
+	var nav = $('nav'),	
+
 		navHeight = nav.outerHeight(),
 		sections = $('section');
 
